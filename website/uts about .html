@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> about </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  background-color: black;
+  
+}
+
+/* Header/ judul Blog  */
+.header {
+  padding: 30px;
+  text-align: justify;
+  background: rgb(133, 130, 130);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.card {
+  box-shadow: white;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  border: grey;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:link, a:visited {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: grey;
+  color: black;
+}
+
+.card-2 {
+  box-shadow: white;
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+  font-family: arial;
+  background-color: black;
+  border: gray;
+  color: white;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #949393;
+  margin-top: 20px;
+}
+
+
+.footer h3 {
+font-size: 20px;
+color: rgb(0, 0, 0);
+}
+
+</style>
+<link rel="stylesheet" type="text/css" href="style uts.css">
+</head>
+<body>
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="uts home .html">home</a>
+        <a href="uts about .html">About</a>
+        <a href="uts galerry .html">gallery</a>
+        <a href="uts registration .HTML">registration</a>
+        <a href="uts contact .html">Contact</a>
+        <button class="dropdown-btn">list
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="uts  article page .html">el-silbon</a>
+          <a href="uts  article page 2l.html">Kuchisake-onna</a>
+          <a href="uts  article page 3.html">kuntilanak</a>
+        </div>
+      </div>  
+    
+
+<div class="header">
+  <span style="text-align:left;font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+</div>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+  }
+
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+  </script>
+
+<h2 style="text-align:center;color:white" >Profile</h2>
+
+<div class="card">
+  <img src="C:/Users/LENOVO DIKSHA/Pictures/Saved Pictures/ghost.png" alt="" style="width:100%">
+  <h1>KAUTSAR MUZAKKI</h1>
+  <p class="title">mahasiswa</p>
+  <p>UIN Syarif Hidayatullah Jakarta</p>
+  <a href="C:\Users\LENOVO DIKSHA\Documents\website\uts contact .html" >contact</a>
+</div>
+
+<div class="card-2">
+<h3>VISI DAN MISI</h3>
+<p>Visi: Mempelajari dan mendokumentasikan berbagai cerita hantu dari seluruh dunia untuk memahami warisan budaya dan kepercayaan masyarakat terkait makhluk gaib.</p>
+<p>Misi:</p>
+<li>1. Menelusuri cerita-cerita hantu dari berbagai negara untuk menciptakan daftar lengkap.</li>
+<li>2. Mendokumentasikan asal-usul dan karakteristik setiap hantu dalam daftar tersebut.</li>
+<li>3. Menyelidiki dampak budaya dan peran hantu dalam tradisi setiap wilayah.</li>
+<li>4. Membuat sumber daya informatif untuk membagikan pengetahuan tentang cerita hantu kepada masyarakat.</li>
+<li>5. Menyelidiki persamaan dan perbedaan antara cerita hantu dari berbagai budaya.</li>
+</div>
+
+<div class="footer">
+    <h2>.copyrght .kautsarmuzakki02@gmail.com</h2>
+  </div>
+
+</body>
+</html>

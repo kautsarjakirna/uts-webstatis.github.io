@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>page 2</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  
+}
+
+/* Header/judul Blog */
+.header {
+  padding: 30px;
+  text-align: justify;
+  background: rgb(133, 130, 130);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+h1{
+text-align: center;
+color: white;
+padding-top: 100px;
+}
+
+p{
+text-align: justify;
+padding-left: 120px;
+padding-right:120px;
+color: white;
+}
+
+img{
+padding-left: 36%;
+}
+
+#more {display: none;}
+
+</style>
+<link rel="stylesheet" type="text/css" href="style uts.css">
+</head>
+<body>
+
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="uts home .html">home</a>
+    <a href="uts about .html">About</a>
+    <a href="uts galerry .html">gallery</a>
+    <a href="uts registration .HTML">registration</a>
+    <a href="uts contact .html">Contact</a>
+    <button class="dropdown-btn">list
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="uts  article page .html">el-silbon</a>
+      <a href="uts  article page 2l.html">Kuchisake-onna</a>
+      <a href="uts  article page 3.html">kuntilanak</a>
+    </div>
+  </div>  
+
+
+<div class="header">
+  <span style="text-align:left;font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+</div>
+
+<div class="flex-container">
+  <div><a href="uts  article page .html">1</a></div>
+  <div><a href="uts  article page 2l.html">2</a></div>
+  <div><a href="uts  article page 3.html">3</a></div>  
+</div>
+
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+  }
+
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+  </script>
+   
+   <h1>Kuchisake-onna</h1>
+  <img src="C:\Users\LENOVO DIKSHA\Pictures\Saved Pictures\Kuchisake-onna.jpeg" alt="">
+   <p>Kuchisake-onna (口裂け女, 'Wanita Mulut Celah') adalah sosok jahat dalam legenda urban dan cerita rakyat Jepang. 
+    Digambarkan sebagai roh jahat, atau onryō, seorang wanita, dia menutupi sebagian wajahnya dengan topeng atau benda lain dan membawa gunting, pisau, atau benda tajam lainnya. 
+    Dia paling sering digambarkan memiliki rambut panjang, lurus, hitam, kulit pucat, dan dianggap cantik (kecuali bekas lukanya). 
+    Dia telah digambarkan sebagai yōkai kontemporer.<span id="dots">...</span><span id="more">Menurut legenda populer, dia bertanya kepada calon korban apakah menurut mereka dia cantik. 
+    Jika mereka menjawab dengan "tidak", dia akan langsung membunuh mereka dengan gunting medis panjangnya atau menunggu sampai malam tiba dan membunuh mereka saat tidur. 
+    Jika mereka menjawab "ya", dia akan memperlihatkan bahwa sudut mulutnya terbelah dari telinga ke telinga, dan dia kemudian akan mengulangi pertanyaannya. 
+    Jika orang tersebut menjawab dengan "tidak", dia akan membunuh mereka dengan senjatanya, dan jika mereka mengatakan "ya" dengan ragu-ragu, dia akan memotong sudut mulut mereka sedemikian rupa sehingga menyerupai cacatnya sendiri. 
+    Metode yang dapat digunakan untuk bertahan saat bertemu dengan Kuchisake-onna termasuk menjawab pertanyaannya dengan mendeskripsikan penampilannya sebagai "rata-rata", atau dengan mengalihkan perhatiannya dengan uang atau permen keras.
+    Legenda Kuchisake-onna digambarkan berasal dari abad ke-17 hingga ke-19, pada zaman Edo di Jepang. Kisah ini mengalami kebangkitan kesadaran di Jepang pada tahun 1970-an, ketika beberapa surat kabar dan majalah memberitakan legenda tersebut, 
+    dan rumor seputar legenda tersebut menyebar ke seluruh negeri, menyebabkan anak-anak kecil ditemani oleh sekelompok orang dewasa saat berjalan pulang dari sekolah.
+</span><button onclick="myFunction()" id="myBtn" >Read more</button></p>
+
+    <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
+      
+
+</body>
+</html>

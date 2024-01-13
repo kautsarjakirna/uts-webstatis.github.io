@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>gallery</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  background-color: black;
+  
+}
+
+/* Header/ judul Blog*/
+.header {
+  padding: 30px;
+  text-align: justify;
+  background: rgb(133, 130, 130);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 380px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: white;
+}
+
+</style>
+<link rel="stylesheet" type="text/css" href="style uts.css">
+</head>
+<body>
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="uts home .html">home</a>
+        <a href="uts about .html">About</a>
+        <a href="uts galerry .html">gallery</a>
+        <a href="uts registration .HTML">registration</a>
+        <a href="uts contact .html">Contact</a>
+        <button class="dropdown-btn">list
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="uts  article page .html">el-silbon</a>
+          <a href="uts  article page 2l.html">Kuchisake-onna</a>
+          <a href="uts  article page 3.html">kuntilanak</a>
+        </div>
+      </div>  
+    
+
+<div class="header">
+  <span style="text-align:left;font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+</div>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+  }
+
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+  </script>
+
+<div class="gallery">
+    <a target="_blank" href="C:\Users\LENOVO DIKSHA\Pictures\Saved Pictures\el-silbon.jpeg">
+      <img src="C:\Users\LENOVO DIKSHA\Pictures\Saved Pictures\el-silbon.jpeg" alt="" width="150" height="100">
+    </a>
+    <div class="desc">el-Silbon</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="C:\Users\LENOVO DIKSHA\Pictures\Saved Pictures\Kuchisake-onna.jpeg">
+      <img src="C:\Users\LENOVO DIKSHA\Pictures\Saved Pictures\Kuchisake-onna.jpeg" alt="" width="600" height="400">
+    </a>
+    <div class="desc">Kuchisake-onna</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="C:\Users\LENOVO DIKSHA\Pictures\Saved Pictures\kuntilanak.jpg">
+      <img src="C:\Users\LENOVO DIKSHA\Pictures\Saved Pictures\kuntilanak.jpg" alt="" width="600" height="400">
+    </a>
+    <div class="desc">kuntilnak</div>
+</div>
+
+</body>
+</html>

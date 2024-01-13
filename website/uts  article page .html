@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>page 1</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  
+}
+
+/* Header/judul Blog */
+.header {
+  padding: 30px;
+  text-align: justify;
+  background: rgb(133, 130, 130);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+h1{
+text-align: center;
+color: white;
+padding-top: 100px;
+}
+
+p{
+text-align: justify;
+padding-left: 120px;
+padding-right:120px;
+color: white;
+}
+
+img{
+padding-left: 36%;
+}
+
+#more {display: none;}
+
+</style>
+<link rel="stylesheet" type="text/css" href="style uts.css">
+</head>
+<body>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="uts home .html">home</a>
+    <a href="uts about .html">About</a>
+    <a href="uts galerry .html">gallery</a>
+    <a href="uts registration .HTML">registration</a>
+    <a href="uts contact .html">Contact</a>
+    <button class="dropdown-btn">list
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="uts  article page .html">el-silbon</a>
+      <a href="uts  article page 2l.html">Kuchisake-onna</a>
+      <a href="uts  article page 3.html">kuntilanak</a>
+    </div>
+  </div>  
+
+  
+
+<div class="header">
+  <span style="text-align:left;font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+</div>
+
+<div class="flex-container">
+  <div><a href="uts  article page .html">1</a></div>
+  <div><a href="uts  article page 2l.html">2</a></div>
+  <div><a href="uts  article page 3.html">3</a></div>  
+</div>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+  }
+
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+  </script>
+ 
+ 
+  <h1>EL-Silbon</h1>
+  <img src="C:\Users\LENOVO DIKSHA\Pictures\Saved Pictures\el-silbon.jpeg" alt="">
+<p>El Silbón (The Whistler) adalah tokoh legendaris di Kolombia dan Venezuela, 
+  terutama terkait dengan wilayah Los Llanos, biasanya digambarkan sebagai jiwa yang hilang. 
+  Legenda tersebut muncul pada pertengahan abad ke-19.<span id="dots">...</span><span id="more"> menurut legenda Suatu sore dia meminta ayahnya berburu daging rusa kesukaannya. 
+  Namun ketika sang ayah tidak menemukan rusa dan kembali dengan tangan kosong, putranya membunuhnya dan memotong jantung dan hatinya. 
+  Dia kemudian meminta ibunya memasaknya untuk makan malam.
+  Sang ibu yang menganggap daging ini keras mulai curiga ada yang tidak beres. 
+  Dia menemukan organ-organ ini adalah isi perut suaminya sendiri dan mengutuk putranya untuk selamanya. 
+  Setelah itu, kakeknya memerintahkan pemuda tersebut untuk diikat pada sebuah tiang di tengah pedesaan dan dicambuk hingga punggungnya hancur. 
+  Luka-lukanya kemudian dibersihkan dengan alkohol, cabai, dan jus lemon, sebuah karung berisi jenazah ayahnya ditaruh di punggungnya yang terluka, 
+  dan dia dilepaskan bersama dua anjing gila dan kelaparan milik kakeknya yang menyerangnya. 
+  Sebelum melepaskannya, kakeknya mengutuk dia untuk membawa tulang belulang ayahnya selama-lamanya.
+  Memiliki ciri khas peluit yang menyerupai notasi musik C, D, E, F, G, A, dan B secara berurutan. 
+  Nadanya naik ke F, lalu turun ke B. Konon, bila siulan berbunyi dekat, maka tidak ada bahaya, 
+  dan si peluitnya jauh, namun bila bunyi siulannya jauh, berarti sudah dekat. 
+  Dikatakan juga bahwa mendengar siulan menandakan kematian seseorang, 
+  dan seseorang dapat mendengarnya di mana saja dan kapan saja. 
+  Dalam situasi ini, satu-satunya hal yang dapat menyelamatkan korban adalah suara gonggongan anjing (karena hanya itu yang ditakuti), 
+  cabai, atau cambuk. Semangatnya cenderung membalas dendam pada para penggoda wanita.
+  Banyak penduduk Los Llanos mengatakan bahwa mereka pernah melihatnya, terutama pada musim panas, 
+  saat sabana Venezuela terbakar akibat kekeringan yang parah. Whistler duduk di pepohonan dan mengumpulkan debu di tangannya. 
+  Namun terutama pada hari-hari hujan atau lembab, roh tersebut mengembara, haus akan kematian, 
+  dan ingin sekali menghukum para pemabuk, penggoda wanita, atau terkadang korban yang tidak bersalah. 
+  Dikatakan bahwa ia menghisap alkohol dari para pemabuk melalui pusar mereka ketika ia menemukan mereka sendirian dan ia mencabik-cabik para penggoda wanita, 
+  mengambil tulang-tulang mereka, dan memasukkan mereka ke dalam karung tempat ia menyimpan jenazah ayahnya. Beberapa versi mengatakan ia tampak seperti raksasa berukuran sekitar enam meter yang bergerak di sekitar puncak pohon, 
+  berderit, dan mengeluarkan peluit dinginnya. Di dalam karungnya yang tua dan compang-camping terdapat tulang belulang ayahnya,
+   atau menurut beberapa terjemahan, banyak korbannya. Versi lain mengatakan dia muncul sebagai bayangan pria tinggi kurus, bertopi, dan paling sering mengejar pemabuk
+  </span><button onclick="myFunction()" id="myBtn" >Read more</button></p>
+
+<script>
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>page 3</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  
+}
+
+/* Header/judul Blog */
+.header {
+  padding: 30px;
+  text-align: justify;
+  background: rgb(133, 130, 130);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+h1{
+text-align: center;
+color: white;
+padding-top: 100px;
+}
+
+p{
+text-align: justify;
+padding-left: 120px;
+padding-right:120px;
+color: white;
+}
+
+img{
+padding-left: 500px;
+
+}
+
+#more {display: none;}
+
+</style>
+<link rel="stylesheet" type="text/css" href="style uts.css">
+</head>
+<body>
+
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="uts home .html">home</a>
+    <a href="uts about .html">About</a>
+    <a href="uts galerry .html">gallery</a>
+    <a href="uts registration .HTML">registration</a>
+    <a href="uts contact .html">Contact</a>
+    <button class="dropdown-btn">list
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="uts  article page .html">el-silbon</a>
+      <a href="uts  article page 2l.html">Kuchisake-onna</a>
+      <a href="uts  article page 3.html">kuntilanak</a>
+    </div>
+  </div>  
+
+
+<div class="header">
+  <span style="text-align:left;font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+</div>
+
+<div class="flex-container">
+  <div><a href="uts  article page .html">1</a></div>
+  <div><a href="uts  article page 2l.html">2</a></div>
+  <div><a href="uts  article page 3.html">3</a></div>  
+</div>
+
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+  }
+
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+  </script>
+   
+   <h1>kuntilanak</h1>
+  <img src="C:\Users\LENOVO DIKSHA\Pictures\Saved Pictures\kuntilanak.jpg" alt="">
+   <p>Kuntilanak (nama Indonesia), disebut juga Pontianak (nama Melayu), atau Yakshi dalam agama Hindu/Mitologi Hindu adalah makhluk mitologi di Indonesia, Malaysia dan Singapura. Mirip dengan Langsuir di kawasan Asia Tenggara lainnya. 
+    Orang Pontianak biasanya berwujud seorang ibu hamil yang tidak mampu melahirkan anak. Atau, ia sering digambarkan sebagai roh perempuan vampir dan pendendam. 
+    Bentuk lain dari Pontianak mengacu pada hantu atau wanita kulit putih dalam cerita rakyat Asia Tenggara.<span id="dots">...</span><span id="more"> Kuntilanak (Pontianak) sering digambarkan sebagai wanita cantik dengan kulit pucat, bermata merah, dan rambut hitam panjang. Dia sering mengenakan gaun putih berlumuran darah. Kuntilanak juga digambarkan berubah menjadi wujud yang lebih mengerikan ketika ia menangkap mangsanya yang biasanya laki-laki atau orang yang tidak berdaya. Karena haus darah dan memiliki sifat karnivora, seorang Pontianak juga bisa muncul sebagai binatang buas atau hantu, menyerupai vampir Drakula.
+        Pontianak hanya muncul saat bulan purnama dan biasanya mengumumkan kehadirannya dengan tangisan bayi atau tawa feminin. Dikatakan bahwa jika suaranya pelan, dia berada di dekatnya, tetapi jika suaranya keras, dia berada jauh. Beberapa sumber juga menyatakan bahwa anjing yang melolong di malam hari menandakan ada Pontianak, namun tidak terlalu dekat; jika anjing merengek, maka Pontianak sudah dekat. Kehadirannya juga dikatakan ditandai dengan aroma bunga, yang dapat diidentifikasi sebagai bunga Plumeria, diikuti dengan bau busuk yang mirip dengan mayat yang membusuk.
+        Pontianak diasosiasikan dengan pohon pisang, dan konon arwahnya bersemayam di dalamnya pada siang hari. Menurut cerita rakyat, seorang Pontianak dapat dilawan dengan cara menancapkan paku ke lubang di tengkuknya, sehingga ia berubah menjadi wanita cantik dan istri yang baik hingga paku tersebut dicabut.
+</span><button onclick="myFunction()" id="myBtn" >Read more</button></p>
+
+    <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
+      
+
+</body>
+</html>

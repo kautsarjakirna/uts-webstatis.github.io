@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #000000;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: justify;
+  background: rgb(133, 130, 130);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+
+
+h2{
+  color: #ddd;
+}
+
+p{
+  color: #ddd;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 60%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 40%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.img {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #949393;
+  margin-top: 20px;
+}
+
+.footer h2 {
+font-size: 20px;
+color: rgb(0, 0, 0);
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+</style>
+<link rel="stylesheet" type="text/css" href="style uts.css">
+</head>
+<body>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="uts home .html">home</a>
+    <a href="uts about .html">About</a>
+    <a href="uts galerry .html">gallery</a>
+    <a href="uts registration .HTML">registration</a>
+    <a href="uts contact .html">Contact</a>
+    <button class="dropdown-btn">list
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="uts  article page .html">el-silbon</a>
+      <a href="uts  article page 2l.html">Kuchisake-onna</a>
+      <a href="uts  article page 3.html">kuntilanak</a>
+    </div>
+  </div>  
+
+
+<div class="header">
+  <span style="text-align:left;font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  <h1>daftar hantu</h1>
+  <p><cite> oleh kautsar muzakki</cite></p>
+</div>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+  }
+
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+  </script>
+     
+
+<div class="row">
+  <div class="leftcolumn">
+      <h2>daftar hantu di seluruh dunia</h2>
+      <p>terdapat berbagai macam cerita hantu dari seluruh dunia, dan masing masing memiliki ciri khas dan sejarahnya tersendiri .</p>
+      <p>berikut merupakan daftar hantu yang telah dikumpulkan:</p>
+      <ol>
+        <li><a href="C:\Users\LENOVO DIKSHA\Documents\website\uts  article page .html"> El-silbon</a></li>
+        <li><a href="C:\Users\LENOVO DIKSHA\Documents\website\uts  article page 2l.html">Kuchisake-onna</a></li>
+        <li><a href="C:\Users\LENOVO DIKSHA\Documents\website\uts  article page 3.html">kuntilanak</a> </li>
+      </ol>
+    </div>
+    <div class="column right">
+        <div class="img" >
+        <h3><img src="C:/Users/LENOVO DIKSHA/Pictures/Saved Pictures/ghost.png" alt=""></h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>.copyrght .kautsarmuzakki02@gmail.com</h2>
+</div>
+
+</body>
+</html>
+
+
